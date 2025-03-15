@@ -3,23 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My perrsonal page</title>
+    <title>My Personal Page</title>
     <style>
         body {
             text-align: center;
             background-color: black;
             color: white;
         }
-    h1 {
-        font-size: 2em;
-    }
-    p{
-        color: orange; 
-    }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            color: orange;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        img {
+            width: 200px; /* Adjust width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Circular image */
+            margin: 20px;
+            border: 3px solid white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 <body>
     <h1>SAMIR BHANDARI</h1>
     <p>This is an introduction of me.</p>
+    <p>I am passionate about web development and enjoy learning new technologies like HTML, CSS, and JavaScript.</p>
+    <img src="samir.jpg" alt="Samir Bhandari's Profile Photo">
+    <button onclick="changeBackground()">Change Background</button>
+    <button onclick="resetBackground()">Reset Background</button>
+
+    <script>
+        function changeBackground() {
+            const colors = ["darkblue", "purple", "green", "teal", "gray"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        function resetBackground() {
+            document.body.style.backgroundColor = "black";
+        }
+    </script>
 </body>
 </html>
