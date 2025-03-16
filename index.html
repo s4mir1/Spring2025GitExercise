@@ -15,6 +15,10 @@
         }
         p {
             color: orange;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.5;
         }
         button {
             margin: 10px;
@@ -23,20 +27,29 @@
             cursor: pointer;
         }
         img {
-            width: 200px; /* Adjust width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%; /* Circular image */
+            width: 250px; 
+            height: 250px;
+            border-radius: 50%;
             margin: 20px;
             border: 3px solid white;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            float: left; 
+        }
+        .content {
+            overflow: hidden; 
         }
     </style>
 </head>
 <body>
     <h1>SAMIR BHANDARI</h1>
-    <p>This is an introduction of me.</p>
-    <p>I am from Nepal about web development and enjoy learning new technologies like HTML, CSS, and JavaScript.</p>
-    <img src="samir.jpg" alt="Samir Bhandari's Profile Photo">
+    <div class="content">
+        <img src="samir.jpg" alt="Samir Bhandari's Profile Photo">
+        <p>Hello! My name is Samir Bhandari, and I am from Jhapa, Nepal. I am currently an international student in South Korea, studying Computer IT. My passion for technology and innovation led me to choose this field, and I am excited to learn and grow in this ever-evolving industry.
+
+        Studying in South Korea has been a great experience, allowing me to develop my programming skills and explore new technologies. I enjoy working on real-world problems and expanding my knowledge in different areas of IT.
+
+        Apart from academics, I love gaming, traveling, and experiencing new cultures. I believe that exploring different perspectives helps me grow both personally and professionally. I look forward to making the most of my journey in South Korea and building a strong foundation for my future career.</p>
+    </div>
     <button onclick="changeBackground()">Change Background</button>
     <button onclick="resetBackground()">Reset Background</button>
 
